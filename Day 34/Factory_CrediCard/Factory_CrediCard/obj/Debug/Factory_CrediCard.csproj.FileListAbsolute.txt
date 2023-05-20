@@ -1,0 +1,8 @@
+D:\.NET_UST\Day 34\Factory_CrediCard\Factory_CrediCard\bin\Debug\Factory_CrediCard.exe.config
+D:\.NET_UST\Day 34\Factory_CrediCard\Factory_CrediCard\bin\Debug\Factory_CrediCard.exe
+D:\.NET_UST\Day 34\Factory_CrediCard\Factory_CrediCard\bin\Debug\Factory_CrediCard.pdb
+D:\.NET_UST\Day 34\Factory_CrediCard\Factory_CrediCard\obj\Debug\Factory_CrediCard.csproj.AssemblyReference.cache
+D:\.NET_UST\Day 34\Factory_CrediCard\Factory_CrediCard\obj\Debug\Factory_CrediCard.csproj.SuggestedBindingRedirects.cache
+D:\.NET_UST\Day 34\Factory_CrediCard\Factory_CrediCard\obj\Debug\Factory_CrediCard.csproj.CoreCompileInputs.cache
+D:\.NET_UST\Day 34\Factory_CrediCard\Factory_CrediCard\obj\Debug\Factory_CrediCard.exe
+D:\.NET_UST\Day 34\Factory_CrediCard\Factory_CrediCard\obj\Debug\Factory_CrediCard.pdb
