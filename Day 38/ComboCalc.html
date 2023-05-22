@@ -1,0 +1,65 @@
+<!--Write a Java Script that accepts two numbers in two TextBoxes and allows user to select
+Arithmetic Operator from combobox. Depending on the operator display result between both
+the numbers in third text box.-->
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>ComboCalculator</title>
+    </head>
+    <body>
+        <h1></h1>
+        <p></p>
+        <label for="num1">Number 1: </label>
+        <input type="text" id="num1"><br><br>
+        <label for="num2">Number 2: </label>
+        <input type="text" id="num2"><br><br>
+        <label for="operator">Operator: </label>
+        <select id="operator">
+            <option></option>
+            <option value="+">+</option>
+            <option value="-">-</option>
+            <option value="*">*</option>
+            <option value="/">/</option>
+        </select><br><br>
+        <label for="result">Result</label>
+        <input type="text" id="result"><br><br>
+        <button onclick="CalcRes()">Calculate</button>
+
+        <script>
+            function CalcRes()
+            {
+                var num1Value=document.getElementById("num1");
+                var num2Value=document.getElementById("num2");
+                var operatorValue=document.getElementById("operator");
+                var resultValue=document.getElementById("result");
+                var num1=parseFloat(num1Value.value);
+                var num2=parseFloat(num2Value.value);
+                var operator=operatorValue.value;
+                let result;
+                switch(operator)
+                {
+                    case"+":
+                    result=num1+num2;
+                    break;
+                    case"-":
+                    result=num1-num2;
+                    break;
+                    case"*":
+                    result=num1*num2;
+                    break;
+                    case"/":
+                    result=num1/num2;
+                    break;
+                    default:
+                        result="Invalid Operation";
+                }
+                resultValue.value=result;
+            }           
+        </script>
+    </body>
+</html>
+
+
+
+
+
