@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Reverse String Using JS</title>
+    </head>
+    <body>
+        
+        <script>
+            var arr = [12, 30, 23, 35, 56, 67, 90, 81, 77, 46];
+            document.write("The orginal array is : ")
+            document.write(arr);
+            document.write("<br>")
+            try{
+                var a=[];
+           for(let i=0;i<arr.length;i++){
+            if(arr[i]>50){
+                a.push(arr[i]);
+            }
+          }
+          document.write("The sorted array is : ")
+          document.write(a);
+
+          if(arr.length===0){
+            throw "Exception: <br><br> No numbers above 50 found";
+          }
+            }
+            catch(exception){
+                document.write(exception);
+            }
+           
+          document.write("<br>")
+
+            document.write("The reversed array is : ")
+           var res= document.write(arr.reverse());
+           document.write("<br><br>");
+
+       
+        </script>
+    </body>
+</html>

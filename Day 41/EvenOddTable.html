@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Even Odd Table</title>
+        <style>
+            table {
+                border-collapse: collapse;
+            }
+            table, th, td {
+                border: 1px solid black;
+                padding: 5px;
+            }
+        </style>
+    </head>
+    <body>
+        <table id="numbersTable">
+            <tr>          
+                <th>Even Numbers</th>
+                <th>Odd Numbers</th>
+            </tr>    
+           </table>
+        <script>
+            var arr = [12, 30, 23, 35, 56, 67, 90, 81, 77, 46];
+            var numbersTable = document.getElementById("numbersTable");
+            for (var i = 0; i < arr.length; i++) {
+            var row = numbersTable.insertRow(-1);
+            var evenCell = row.insertCell(0);
+            var oddCell = row.insertCell(1);
+            if (arr[i] % 2 === 0) {
+                    evenCell.textContent = arr[i];
+            } else {
+                    oddCell.textContent = arr[i];
+            }
+            }
+        </script>
+    </body>
+</html>
