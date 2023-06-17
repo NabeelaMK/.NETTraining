@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Survey Form</title>
+        <style>
+            h1{
+                color: blue;
+                text-align: center;
+            }
+            form{
+                margin-left: 43%;
+            }
+
+        </style>
+    </head>
+    <body>
+        <h1>Survey Form</h1>
+        <form>
+            <label for="name">Name:</label>
+            <input type="text" id="name" placeholder="Enter Full Name" required>
+            <br><br>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" placeholder="joe@example.com" required>
+            <br><br>
+
+            <label for="age">Age:</label>
+            <input type="number" id="age" min="20" max="30">
+            <br><br>
+
+            <label for="describe">Which options should describes you?</label>
+            <select id="role">
+                <option value="select">Select</option>
+                <option value="developer">Developer</option>
+                <option value="analyst">Analyst</option>
+                <option value="tester">Tester</option>
+                <option value="engineer">Engineer</option>
+            </select>
+            <br><br>
+
+            <label for="recommend">Would you recommend us to a friend?</label><br>
+            <input type="radio" id="recommend-1" name="recommend">Recommend-1
+            <input type="radio" id="recommend-2" name="recommend">Recommend-2
+            <input type="radio" id="recommend-3" name="recommend">Recommend-3
+            <br><br>
+
+            <label for="known">Languages and Frameworks known:</label><br>
+            <input type="checkbox" id="skills">C#
+            <input type="checkbox" id="skills">Python
+            <input type="checkbox" id="skills">Java
+            <input type="checkbox" id="skills">Javascript
+            <br><br>
+
+            <label for="comment">Comments</label>
+            <textarea id="comment" placeholder="Enter Your Commends" rows="3" cols="10"></textarea>
+            <br><br>
+
+            <input type="submit" id="submit">
+        </form>
+    </body>
+</html>
