@@ -1,0 +1,24 @@
+<html>
+    <body>
+        <div id="fetch">
+
+        </div>
+        <button type="button" onclick="myFun()"> to get data </button>
+
+        <script>
+            let fetchh = document.getElementById("fetch");
+            function myFun(){
+                fetch("https://dummyjson.com/products/1")
+                .then(response => response.json())
+                .then(value =>{
+                    fetchh.innerHTML+= "id ="+value.id+"<br/>";
+                    fetchh.innerHTML+="brand ="+value.brand+"<br/>";
+                    fetchh.innerHTML+="category ="+value.category+"<br/>";
+                    fetchh.innerHTML+="price ="+value.price+"<br/>";
+                    fetchh.innerHTML+="rating ="+value.rating+"<br/>";
+                    fetchh.innerHTMK+="stock ="+value.stock+"<br/>";
+                })
+            }
+        </script>
+    </body>
+</html>

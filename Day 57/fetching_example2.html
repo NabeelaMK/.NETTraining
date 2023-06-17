@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+    <head></head>
+    <body>
+        <div id="quote-container"></div>
+        <script>
+            fetch("https://api.quotable.io/random")
+            .then(response => response.json())
+            .then(data =>{
+                displayQuote(data);
+            })
+            .catch(error =>{
+                console.error("Error:", error);
+            });
+            function displayQuote(quotedata){
+                const quotecontainer = document.getElementById("quote-container");
+                const quoteText = quotedata.content;
+                const quoteAuthor = quotedata.author;
+                const quoteHTML = `<blockquote>
+                                    <p>${quoteText}</p>
+                                    <footer>${quoteAuthor}</footer>
+                                    </blockquote>`;
+                quotecontainer.innerHTML = quoteHTML;
+            }
+
+        </script>
+    </body>
+</html>

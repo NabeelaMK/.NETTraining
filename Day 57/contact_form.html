@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Contact Form</title>
+        <style>
+            h2{
+                margin-top: 10%;
+            }
+            form{
+                padding: 0%;
+                border: 200px;
+                font-style: italic;
+            }
+        </style>
+    </head>
+    <body>
+        <h2>Contact Form</h2>
+        <form method="post" action="submit.html">
+            <label for="name">Name:</label>
+            <input type="text" id="name" required>
+            <br><br>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" required>
+            <br><br>
+
+            <label for="password">Password:</label>
+            <input type="password" id="password" required>
+            <br><br>
+
+            <label for="message">Message:</label>
+            <textarea id="message" placeholder="Enter your message"></textarea>
+            <br><br>
+
+            <input type="submit" id="save">
+            <br><br>
+            
+            <script>
+                function myFun(){
+                    alert("Successfully submitted");
+                }
+            </script>
+            <button type="button" onclick="myFun();">Confirm Submission</button>
+        </form>
+        
+    </body>
+</html>

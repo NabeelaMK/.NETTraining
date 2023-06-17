@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+    <head></head>
+    <body>
+        <form>
+            <label for="firstName">First Name:</label>
+            <input type="text" id="firstName"><br><br>
+            <label for="lastName">Last Name:</label>
+            <input type="text" id="lastName"><br><br>
+
+            <button type="button" onclick="myFun()">Click Me</button>
+        </form>
+        <script>
+            function myFun(){
+                let fName=document.getElementById("firstName").value;
+                let lName=document.getElementById("lastName").value;
+                alert(`Hello ${fName} ${lName}`);
+            }
+        </script>
+    </body>
+</html>

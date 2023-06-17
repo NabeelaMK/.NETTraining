@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+    <head></head>
+    <body>
+        <script>
+            var n = parseInt(prompt("Enter array length"));
+            var arr=[];
+            for (var i=0; i<n; i++){
+                arr[i] = parseInt(prompt("Enter array elements " + (i+1)));
+            }
+            for(var i=0; i<n; i++){
+                document.write(`${arr[i]}<br>`);
+            }
+            var max=Math.max(...arr);
+            var min=Math.min(...arr);
+            document.write(`Min is ${min} and Max is ${max}`);
+        </script>
+    </body>
+</html>

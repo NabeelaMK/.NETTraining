@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+    <head></head>
+    <script>
+        function myFun(){
+            var a=parseInt(document.getElementById("a").value);
+            var b=parseInt(document.getElementById("b").value);
+            var op=document.getElementById("calc").value;
+            var result;
+            switch(op){
+                case "add":
+                    result=a+b;
+                    break;
+                case "sub":
+                    result=a-b;
+                    break;
+                case "mul":
+                    result=a*b;
+                    break;
+                case "div":
+                    result=a/b;
+                    break;
+            }
+            document.getElementById("demo").innerHTML=result;
+        }
+    </script>
+    <body>
+        <form>
+            <label for="a">Enter value a:</label>
+            <input type="text" id="a"><br><br>
+            <label for="b">Enter value b:</label>
+            <input type="text" id="b"><br><br>
+            <label for="operation">Operation</label>
+            <select id="calc">
+                <option value="select">Select</option>
+                <option value="add">+</option>
+                <option value="sub">-</option>
+                <option value="mul">*</option>
+                <option value="div">/</option>
+            </select><br><br>
+            <button type="button" onclick="myFun()">Calculate</button>
+            <br><br>Result:<div id="demo">
+
+            </div>
+        </form>
+    </body>
+</html>
